@@ -1,0 +1,65 @@
+@keyframe anime {
+  from {
+    -webkit-box-shadow: 5px 10px 15px #0D0D0D, -1px -1px 5px rgba(20, 0, 0, 0.6);
+            box-shadow: 5px 10px 15px #0D0D0D, -1px -1px 5px rgba(20, 0, 0, 0.6);
+  }
+  to {
+    -webkit-box-shadow: 5px 10px 25px #0D0D0D, -1px -1px 10px rgba(0, 50, 0, 0.6);
+            box-shadow: 5px 10px 25px #0D0D0D, -1px -1px 10px rgba(0, 50, 0, 0.6);
+  }
+}
+
+.pCard {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  border: 1px outset rgba(0, 0, 0, 0.9);
+  background: url("bg0.jpg") no-repeat fixed;
+  background-size: cover;
+  color: white;
+  font-family: 'Mali', cursive;
+  -webkit-box-shadow: 5px 10px 15px #0D0D0D, -1px -1px 5px rgba(20, 0, 0, 0.6);
+          box-shadow: 5px 10px 15px #0D0D0D, -1px -1px 5px rgba(20, 0, 0, 0.6);
+  font-size: 20px;
+  border-radius: 10px;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  text-align: center;
+  padding: 0;
+}
+
+.pCard:hover {
+  -webkit-box-shadow: 10px 15px 20px #0D0D0D, 0 0 1px rgba(0, 50, 0, 0.6);
+          box-shadow: 10px 15px 20px #0D0D0D, 0 0 1px rgba(0, 50, 0, 0.6);
+}
+
+p::-moz-selection {
+  color: black;
+  background: rgba(50, 0, 0, 0.23);
+}
+
+p::selection {
+  color: black;
+  background: rgba(50, 0, 0, 0.23);
+}
+
+#notch {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 7px solid black;
+  border-radius: 5px;
+  border-top: 7px solid transparent;
+  border-right: 7px solid transparent;
+  -webkit-transform: translate(0, -17px) rotateZ(-45deg);
+          transform: translate(0, -17px) rotateZ(-45deg);
+}
+
+p {
+  margin-top: 60%;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+  word-wrap: break-word;
+  letter-spacing: 3px;
+}
+/*# sourceMappingURL=card.css.map */

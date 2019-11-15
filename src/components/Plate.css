@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.plate {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  padding: 50px;
+  height: 100vh;
+  -ms-grid-columns: 30% 30% 30%;
+      grid-template-columns: 30% 30% 30%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  grid-row-gap: 1em;
+  background: #4C4C4C;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#addbt {
+  background: rgba(205, 200, 205, 0.9);
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  margin-top: 100px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-align: center;
+  z-index: 5;
+}
+
+#addbt .plus {
+  width: 100px;
+  height: 100px;
+  font-size: 5.5em;
+  line-height: 1.1em;
+  color: black;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.open {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+
+.close {
+  display: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.show {
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#card {
+  display: none;
+  position: absolute;
+  width: 25%;
+  height: 20%;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 30% 30% 30%;
+      grid-template-rows: 30% 30% 30%;
+  grid-row-gap: 5px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  top: 50%;
+  left: 50%;
+  background: transparent;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  outline: none;
+}
+
+#card #create {
+  border: 1px solid gray;
+  width: 100px;
+  height: 100%;
+  background: transparent;
+  color: green;
+}
+
+#card #projectName {
+  border: none;
+  border-left: 3px solid #eb56eb;
+  background: -webkit-gradient(linear, left top, right top, from(#201a1a), to(rgba(46, 42, 42, 0.267)));
+  background: linear-gradient(90deg, #201a1a, rgba(46, 42, 42, 0.267));
+  color: #00BCD4;
+  padding-left: 5px;
+}
+
+#card #projectFolder {
+  border: none;
+  border-left: 3px solid #eb56eb;
+  background: -webkit-gradient(linear, left top, right top, from(#201a1a), to(rgba(46, 42, 42, 0.267)));
+  background: linear-gradient(90deg, #201a1a, rgba(46, 42, 42, 0.267));
+  color: #00BCD4;
+  padding-left: 5px;
+}
+/*# sourceMappingURL=Plate.css.map */
